@@ -1,0 +1,657 @@
+
+/* =====================================
+   CONFIGURACION GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f5fb;
+    color: #252525;
+}
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+.encabezado {
+    background-color: white;
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 55px;
+    color: #1b4075;
+}
+
+.encabezado h1 {
+    color: #1b4075;
+    font-size: 38px;
+}
+
+/* =====================================
+   MENU DE NAVEGACION
+===================================== */
+
+.navegacion {
+    background-color: #1b4075;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding: 20px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    color: #c8dcff;
+}
+
+.menu-icono {
+    color: white;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+/* =====================================
+   CONTENIDO PRINCIPAL
+===================================== */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* =====================================
+   PRESENTACION PRINCIPAL
+===================================== */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+    padding: 15px 30px 40px;
+    gap: 40px;
+}
+
+.texto-presentacion {
+    flex: 1;
+}
+
+.texto-presentacion h2 {
+    color: #1b4075;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.texto-presentacion p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 570px;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   ILUSTRACION DE BIRRETE Y LIBROS
+===================================== */
+
+.ilustracion {
+    flex: 1;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.birrete {
+    font-size: 110px;
+    line-height: 1.2;
+    z-index: 2;
+    margin-bottom: -5px;
+}
+
+.libro {
+    width: 230px;
+    height: 35px;
+    background: #ffffff;
+    border: 3px solid #8a929f;
+    border-radius: 10px 20px 15px 10px;
+    box-shadow: 0 5px 5px #c3cad5;
+    margin-top: -3px;
+}
+
+.libro-uno {
+    width: 190px;
+}
+
+.libro-dos {
+    width: 220px;
+    background: #e1e9f5;
+}
+
+.libro-tres {
+    width: 250px;
+    background: #ffffff;
+}
+
+/* =====================================
+   TITULO DE TARJETAS
+===================================== */
+
+.titulo-tarjetas {
+    font-size: 28px;
+    color: #252525;
+    margin-top: 20px;
+}
+
+.subtitulo-tarjetas {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   TARJETAS PRINCIPALES
+===================================== */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 2px solid #1b4075;
+    border-radius: 12px;
+    min-height: 280px;
+    padding: 25px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono {
+    font-size: 43px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: #1b4075;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    font-size: 18px;
+    line-height: 1.5;
+    min-height: 55px;
+}
+
+/* =====================================
+   BOTONES SECUNDARIOS
+===================================== */
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 1px solid #1b4075;
+    border-radius: 30px;
+    color: #1b4075;
+    background-color: #eaf0fa;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #1b4075;
+    color: white;
+}
+
+/* =====================================
+   BOTON PRINCIPAL
+===================================== */
+
+.accion {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #1b4075;
+    color: white;
+    text-decoration: none;
+    padding: 23px 65px;
+    border-radius: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #102d55;
+}
+
+/* =====================================
+   INFORMACION COMPLEMENTARIA
+===================================== */
+
+.informacion {
+    background-color: white;
+    border-left: 5px solid #1b4075;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.informacion h2 {
+    color: #1b4075;
+    margin-bottom: 12px;
+}
+
+/* =====================================
+   PAGINAS DE POSTULACION
+===================================== */
+
+.pagina-extra {
+    background-color: white;
+    padding: 35px;
+    margin: 45px 0;
+    border-radius: 12px;
+    scroll-margin-top: 20px;
+}
+
+.numero-paso {
+    background-color: #eaf0fa;
+    color: #1b4075;
+    display: table;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.pagina-extra > h2 {
+    color: #1b4075;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.descripcion-pagina {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* =====================================
+   OPCIONES DE BECAS
+===================================== */
+
+.opciones-becas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.opcion-beca {
+    border: 2px solid #1b4075;
+    border-radius: 12px;
+    padding: 25px 18px;
+    text-align: center;
+    background-color: #f2f5fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-beca {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.opcion-beca h3 {
+    color: #1b4075;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.opcion-beca p {
+    font-size: 17px;
+    line-height: 1.6;
+    min-height: 120px;
+}
+
+.opcion-beca .boton {
+    margin-top: auto;
+}
+
+/* =====================================
+   LISTA DE REQUISITOS
+===================================== */
+
+.lista-requisitos {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.requisito {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f2f5fb;
+    border-left: 5px solid #1b4075;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.icono-requisito {
+    font-size: 42px;
+    min-width: 55px;
+    text-align: center;
+}
+
+.requisito h3 {
+    color: #1b4075;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.requisito p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =====================================
+   AVISOS
+===================================== */
+
+.nota {
+    background-color: #eaf0fa;
+    border-left: 4px solid #1b4075;
+    color: #1b4075;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 25px auto;
+    max-width: 850px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* =====================================
+   FORMULARIO DE POSTULACION
+===================================== */
+
+.imagen-formulario {
+    width: 82px;
+    height: 82px;
+    margin: 22px auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf0fa;
+    border-radius: 50%;
+    font-size: 43px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto 10px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 24px;
+    background: #f7f9fd;
+    border: 1px solid #d7e0ef;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(27, 64, 117, 0.08);
+}
+
+.formulario-titulo,
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.formulario-titulo {
+    padding-bottom: 17px;
+    border-bottom: 1px solid #d7e0ef;
+}
+
+.formulario-titulo h3 {
+    color: #1b4075;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.formulario-titulo p {
+    color: #596579;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.formulario label {
+    color: #1b4075;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 14px 15px;
+    border: 1px solid #b8c6da;
+    border-radius: 8px;
+    color: #252525;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario input,
+.formulario select {
+    min-height: 49px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: #8994a5;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #1b4075;
+    box-shadow: 0 0 0 3px rgba(27, 64, 117, 0.13);
+}
+
+.formulario textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.formulario .nota {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.formulario-acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    padding-top: 5px;
+}
+
+.formulario .boton-principal {
+    width: min(100%, 470px);
+    margin: 0;
+    padding: 19px 28px;
+    font-size: 19px;
+}
+
+.volver-becas {
+    color: #1b4075;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.volver-becas:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   PIE DE PAGINA
+===================================== */
+
+footer {
+    background-color: #1b4075;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* =====================================
+   ADAPTACION PARA CELULARES
+===================================== */
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado h1 {
+        font-size: 27px;
+    }
+
+    .navegacion {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navegacion a {
+        font-size: 15px;
+    }
+
+    .menu-icono {
+        display: none;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-presentacion h2 {
+        font-size: 32px;
+    }
+
+    .ilustracion {
+        width: 100%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .opciones-becas {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-extra {
+        padding: 20px;
+    }
+
+    .pagina-extra > h2 {
+        font-size: 26px;
+    }
+
+    .opcion-beca p {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .requisito {
+        align-items: flex-start;
+    }
+
+    .boton-principal {
+        font-size: 18px;
+        padding: 18px 35px;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        padding: 22px 18px;
+        gap: 18px;
+    }
+
+    .formulario-titulo,
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .formulario .boton-principal {
+        width: 100%;
+        font-size: 16px;
+        padding: 17px 20px;
+    }
+}
